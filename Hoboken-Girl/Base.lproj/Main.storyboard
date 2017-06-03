@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Snap View Controller-->
+        <scene sceneID="gch-ws-f8C">
+            <objects>
+                <viewController id="7Bg-Wz-tVe" customClass="snapViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bsV-1g-dP3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nla-y7-U93"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wgf-6p-DJK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Screen Shot and Add Us on Snapchat!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7d-6c-abX">
+                                <rect key="frame" x="34" y="20" width="306" height="121"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="AWY-5f-4qw"/>
+                                    <constraint firstAttribute="height" constant="121" id="J3G-Fg-CMH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hoboken-Girl-Snapcode" translatesAutoresizingMaskIntoConstraints="NO" id="C2X-gm-hl7">
+                                <rect key="frame" x="34" y="154" width="306" height="359"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="359" id="TOz-8p-NhD"/>
+                                    <constraint firstAttribute="width" constant="306" id="z8W-4F-fyQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyr-e0-2DE">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JJj-Yb-ria"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="Sjr-dp-JHq" eventType="touchUpInside" id="G3F-vZ-qif"/>
+                                    <action selector="Home:" destination="7Bg-Wz-tVe" eventType="touchUpInside" id="Wcv-hm-9cG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="N7d-6c-abX" firstAttribute="top" secondItem="bsV-1g-dP3" secondAttribute="bottom" id="90a-wo-IY2"/>
+                            <constraint firstItem="C2X-gm-hl7" firstAttribute="centerX" secondItem="wgf-6p-DJK" secondAttribute="centerX" id="BLw-G1-cDY"/>
+                            <constraint firstItem="C2X-gm-hl7" firstAttribute="top" secondItem="N7d-6c-abX" secondAttribute="bottom" constant="13" id="Fcc-Em-FgI"/>
+                            <constraint firstItem="Oyr-e0-2DE" firstAttribute="leading" secondItem="wgf-6p-DJK" secondAttribute="leading" id="Ndl-yC-n6E"/>
+                            <constraint firstItem="Nla-y7-U93" firstAttribute="top" secondItem="Oyr-e0-2DE" secondAttribute="bottom" id="j9U-KW-QVf"/>
+                            <constraint firstAttribute="trailing" secondItem="Oyr-e0-2DE" secondAttribute="trailing" id="ong-D3-NuS"/>
+                            <constraint firstItem="Oyr-e0-2DE" firstAttribute="centerX" secondItem="wgf-6p-DJK" secondAttribute="centerX" id="plU-w9-4AV"/>
+                            <constraint firstItem="N7d-6c-abX" firstAttribute="centerX" secondItem="wgf-6p-DJK" secondAttribute="centerX" id="ur7-if-N6z"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QfK-Z7-AK3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="785.75712143928047"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="7Uf-6n-tBb">
+                                <rect key="frame" x="18" y="556" width="338" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRQ-Ld-rBc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="Oei-J1-YxN"/>
+                                        </constraints>
+                                        <state key="normal" image="FB-Btn"/>
+                                        <connections>
+                                            <action selector="FB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hna-Ft-nqp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SaR-CE-CFl">
+                                        <rect key="frame" x="57" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="1HY-yL-ODi"/>
+                                        </constraints>
+                                        <state key="normal" image="Insta-Btn"/>
+                                        <connections>
+                                            <action selector="INSTA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8FB-lr-KVP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU7-dZ-Dug">
+                                        <rect key="frame" x="114" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="fgX-QW-2et"/>
+                                        </constraints>
+                                        <state key="normal" image="Twitter-Btn"/>
+                                        <connections>
+                                            <action selector="TWT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jRg-7f-Prc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDb-3w-rPj">
+                                        <rect key="frame" x="171" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="nns-SE-HX0"/>
+                                        </constraints>
+                                        <state key="normal" image="Pinterst"/>
+                                        <connections>
+                                            <action selector="PIN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYp-t8-GM5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlA-bd-4y4">
+                                        <rect key="frame" x="228" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="UWZ-bd-PV2"/>
+                                        </constraints>
+                                        <state key="normal" image="Snapchat"/>
+                                        <connections>
+                                            <segue destination="7Bg-Wz-tVe" kind="show" id="oun-2B-kU3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f0-nB-aYs">
+                                        <rect key="frame" x="285" y="0.0" width="53" height="50"/>
+                                        <state key="normal" image="Mail"/>
+                                        <connections>
+                                            <segue destination="grN-cF-cJR" kind="show" id="lrh-Jz-z61"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cme-cX-5U2"/>
+                                    <constraint firstAttribute="width" constant="338" id="Zff-xv-0Cd"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hoboken-girl-logo" translatesAutoresizingMaskIntoConstraints="NO" id="83L-Y3-O2W">
+                                <rect key="frame" x="18" y="20" width="338" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="M3j-zl-Mbh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ei-6Q-Oqc">
+                                <rect key="frame" x="17.5" y="232" width="340" height="50"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="340" id="5Vr-l5-dLO"/>
+                                    <constraint firstAttribute="height" constant="50" id="SDj-1A-wd4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Deals">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cWQ-MC-qyE" kind="show" id="QBT-Oh-d9I"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T64-4l-8fw">
+                                <rect key="frame" x="17" y="290" width="340" height="245"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="WES-1W-cPj">
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="245"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVc-kL-9ah">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="DE7-uE-1VE"/>
+                                                    <constraint firstAttribute="height" constant="50" id="IVr-m9-bh9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Events &amp; News">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Lcm-vf-Iv2" kind="show" id="j4c-w1-aEy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTh-ye-X2U">
+                                                <rect key="frame" x="0.0" y="65" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="2cd-na-syB"/>
+                                                    <constraint firstAttribute="height" constant="50" id="al0-3Z-n4r"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Fashion &amp; Beauty">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="yG1-xW-gL2" kind="show" id="Eep-yu-jCQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6G-Wv-G7x">
+                                                <rect key="frame" x="0.0" y="130" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="OLj-53-Jqh"/>
+                                                    <constraint firstAttribute="height" constant="50" id="SE0-cb-6rh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="People">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="8sf-ZY-GzO" kind="show" id="Ldm-T6-K4k"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBG-a7-qIf">
+                                                <rect key="frame" x="0.0" y="195" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="hVA-Fb-ODv"/>
+                                                    <constraint firstAttribute="height" constant="50" id="iOm-kI-6ET"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Top Picks">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="IJt-mu-ENO" kind="show" id="uEh-9T-24N"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="2fp-p7-Eyc">
+                                        <rect key="frame" x="175" y="0.0" width="165" height="245"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMt-GX-d2C">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2g8-Qa-H3Q"/>
+                                                    <constraint firstAttribute="width" constant="165" id="bK6-Kf-KBv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Food &amp; Drink">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Uua-jR-YHS" kind="show" id="ZbM-An-eyU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFF-VV-i3a">
+                                                <rect key="frame" x="0.0" y="65" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="QEZ-39-paS"/>
+                                                    <constraint firstAttribute="width" constant="165" id="uaF-DK-ut8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Lifestyle">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Aaf-4g-Ntg" kind="show" id="aee-L1-bnN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joo-1B-JbO">
+                                                <rect key="frame" x="0.0" y="130" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="Ce1-Dd-YvT"/>
+                                                    <constraint firstAttribute="height" constant="50" id="FRX-XG-fN4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Jersey City">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Sjr-dp-JHq" kind="show" id="kae-5W-HHc"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoI-Tl-Z4s">
+                                                <rect key="frame" x="0.0" y="195" width="165" height="50"/>
+                                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="8tI-Bz-UGN"/>
+                                                    <constraint firstAttribute="height" constant="50" id="ikw-Ws-DZU"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <state key="normal" title="Volunteering">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="vnt-Ws-AkE" kind="show" id="ijr-eK-WWb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Uf-6n-tBb" firstAttribute="centerX" secondItem="83L-Y3-O2W" secondAttribute="centerX" id="1Vg-wp-sTq"/>
+                            <constraint firstItem="83L-Y3-O2W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B4t-zV-fJD"/>
+                            <constraint firstItem="7Uf-6n-tBb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IMb-7Q-8pg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="83L-Y3-O2W" secondAttribute="trailing" constant="3" id="IgK-tZ-adu"/>
+                            <constraint firstItem="T64-4l-8fw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W24-kv-Ibj"/>
+                            <constraint firstItem="T64-4l-8fw" firstAttribute="top" secondItem="2ei-6Q-Oqc" secondAttribute="bottom" constant="8" id="Xsj-0o-nOi"/>
+                            <constraint firstItem="2ei-6Q-Oqc" firstAttribute="top" secondItem="83L-Y3-O2W" secondAttribute="bottom" constant="8" id="dW8-Xb-jSm"/>
+                            <constraint firstItem="83L-Y3-O2W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="g6k-EH-aHd"/>
+                            <constraint firstItem="83L-Y3-O2W" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gfv-mN-W4Y"/>
+                            <constraint firstItem="2ei-6Q-Oqc" firstAttribute="centerX" secondItem="83L-Y3-O2W" secondAttribute="centerX" id="jRT-aB-Zvv"/>
+                            <constraint firstItem="T64-4l-8fw" firstAttribute="centerX" secondItem="83L-Y3-O2W" secondAttribute="centerX" id="t4C-ZV-HhV"/>
+                            <constraint firstItem="7Uf-6n-tBb" firstAttribute="top" secondItem="T64-4l-8fw" secondAttribute="bottom" constant="21" id="wz2-eB-7bd"/>
+                            <constraint firstItem="2ei-6Q-Oqc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="x6g-mp-vXg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="About" destination="BoI-Tl-Z4s" id="0t2-ML-mwj"/>
+                        <outlet property="Ad" destination="rBG-a7-qIf" id="cCn-FE-pYE"/>
+                        <outlet property="Deals" destination="2ei-6Q-Oqc" id="Di3-mz-fTF"/>
+                        <outlet property="EN" destination="tVc-kL-9ah" id="w9w-8K-Ncy"/>
+                        <outlet property="FB" destination="GRQ-Ld-rBc" id="eW5-So-fbs"/>
+                        <outlet property="FD" destination="xMt-GX-d2C" id="U9h-b6-Laf"/>
+                        <outlet property="JC" destination="Joo-1B-JbO" id="ubJ-KI-axJ"/>
+                        <outlet property="Life" destination="DFF-VV-i3a" id="Vht-zc-IOq"/>
+                        <outlet property="Peo" destination="O6G-Wv-G7x" id="f9Q-WX-Y5n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+        <!--Events News View Controller-->
+        <scene sceneID="NXE-1j-Od1">
+            <objects>
+                <viewController id="Lcm-vf-Iv2" customClass="EventsNewsViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YXE-TG-XMX"/>
+                        <viewControllerLayoutGuide type="bottom" id="P3F-ng-l7T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YAa-b6-TFj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiT-CK-cTV">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.719798743724823" green="0.83552426099777222" blue="0.40302795171737671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KWU-m4-7zo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="Lcm-vf-Iv2" eventType="touchUpInside" id="KQ9-V2-NmP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzw-fP-xTG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wzw-fP-xTG" firstAttribute="top" secondItem="YXE-TG-XMX" secondAttribute="bottom" id="Aud-yn-guZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Wzw-fP-xTG" secondAttribute="trailing" id="LOf-we-ikq"/>
+                            <constraint firstItem="GiT-CK-cTV" firstAttribute="top" secondItem="Wzw-fP-xTG" secondAttribute="bottom" id="PDv-Tc-MAb"/>
+                            <constraint firstAttribute="trailing" secondItem="GiT-CK-cTV" secondAttribute="trailing" id="SsW-LT-Ur5"/>
+                            <constraint firstItem="Wzw-fP-xTG" firstAttribute="leading" secondItem="YAa-b6-TFj" secondAttribute="leading" id="WE0-Bm-Byt"/>
+                            <constraint firstItem="GiT-CK-cTV" firstAttribute="leading" secondItem="YAa-b6-TFj" secondAttribute="leading" id="icL-OO-2Vc"/>
+                            <constraint firstItem="P3F-ng-l7T" firstAttribute="top" secondItem="GiT-CK-cTV" secondAttribute="bottom" id="x4v-jx-KEu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="Wzw-fP-xTG" id="DyD-89-LEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EuA-l3-jQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="848.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--Food Drink View Controller-->
+        <scene sceneID="AUL-hJ-auL">
+            <objects>
+                <viewController id="Uua-jR-YHS" customClass="FoodDrinkViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GRf-Ky-fZk"/>
+                        <viewControllerLayoutGuide type="bottom" id="2SC-JW-nog"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0dw-oC-3Yp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0e-dC-Onf">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fSn-uT-uIn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="Uua-jR-YHS" eventType="touchUpInside" id="26e-2E-R3Z"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85l-Mb-L8X">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="d0e-dC-Onf" firstAttribute="leading" secondItem="0dw-oC-3Yp" secondAttribute="leading" id="40g-u3-wZr"/>
+                            <constraint firstAttribute="trailing" secondItem="85l-Mb-L8X" secondAttribute="trailing" id="I7K-gX-eHG"/>
+                            <constraint firstAttribute="trailing" secondItem="d0e-dC-Onf" secondAttribute="trailing" id="UAl-Gy-jrm"/>
+                            <constraint firstItem="85l-Mb-L8X" firstAttribute="top" secondItem="GRf-Ky-fZk" secondAttribute="bottom" id="ZFC-dY-a6x"/>
+                            <constraint firstItem="85l-Mb-L8X" firstAttribute="leading" secondItem="0dw-oC-3Yp" secondAttribute="leading" id="d6o-JO-xBZ"/>
+                            <constraint firstItem="2SC-JW-nog" firstAttribute="top" secondItem="d0e-dC-Onf" secondAttribute="bottom" id="hYH-NY-G3w"/>
+                            <constraint firstItem="d0e-dC-Onf" firstAttribute="top" secondItem="85l-Mb-L8X" secondAttribute="bottom" id="uQD-iJ-84w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="85l-Mb-L8X" id="J7p-uC-l16"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zlm-QV-Bae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="139"/>
+        </scene>
+        <!--Fashion Beauty View Controller-->
+        <scene sceneID="dHg-uX-oK2">
+            <objects>
+                <viewController id="yG1-xW-gL2" customClass="FashionBeautyViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cJk-H9-Ehv"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTN-VJ-ZIh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MJo-pq-Z3b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUa-1b-wCQ">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UdD-KD-KXE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="yG1-xW-gL2" eventType="touchUpInside" id="BaF-AV-4h0"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udD-af-iMX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="udD-af-iMX" firstAttribute="leading" secondItem="MJo-pq-Z3b" secondAttribute="leading" id="4mB-35-eS0"/>
+                            <constraint firstItem="udD-af-iMX" firstAttribute="top" secondItem="cJk-H9-Ehv" secondAttribute="bottom" id="DmY-sY-iw0"/>
+                            <constraint firstItem="UUa-1b-wCQ" firstAttribute="top" secondItem="udD-af-iMX" secondAttribute="bottom" id="EIq-Ky-rPr"/>
+                            <constraint firstAttribute="trailing" secondItem="UUa-1b-wCQ" secondAttribute="trailing" id="Hah-2C-Qw4"/>
+                            <constraint firstItem="RTN-VJ-ZIh" firstAttribute="top" secondItem="UUa-1b-wCQ" secondAttribute="bottom" id="OnH-x1-Bjx"/>
+                            <constraint firstAttribute="trailing" secondItem="udD-af-iMX" secondAttribute="trailing" id="SyW-DF-8b6"/>
+                            <constraint firstItem="UUa-1b-wCQ" firstAttribute="leading" secondItem="MJo-pq-Z3b" secondAttribute="leading" id="kah-A0-03O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="udD-af-iMX" id="cnJ-yQ-2as"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoW-dR-ga9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126" y="139"/>
+        </scene>
+        <!--Lifestyle View Controller-->
+        <scene sceneID="RvK-uL-Lrd">
+            <objects>
+                <viewController id="Aaf-4g-Ntg" customClass="LifestyleViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cHJ-8P-Vzc"/>
+                        <viewControllerLayoutGuide type="bottom" id="5r2-Gg-P6W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z87-nE-ViO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPu-EI-dKp">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="R3x-zf-XZq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="Aaf-4g-Ntg" eventType="touchUpInside" id="g2M-tg-oh8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O2e-zd-dLm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mPu-EI-dKp" secondAttribute="trailing" id="Qdb-ta-E3J"/>
+                            <constraint firstItem="5r2-Gg-P6W" firstAttribute="top" secondItem="mPu-EI-dKp" secondAttribute="bottom" id="SQI-bk-Gwu"/>
+                            <constraint firstAttribute="trailing" secondItem="O2e-zd-dLm" secondAttribute="trailing" id="Y3e-ac-VJV"/>
+                            <constraint firstItem="mPu-EI-dKp" firstAttribute="top" secondItem="O2e-zd-dLm" secondAttribute="bottom" id="YWa-Uc-LzW"/>
+                            <constraint firstItem="O2e-zd-dLm" firstAttribute="top" secondItem="cHJ-8P-Vzc" secondAttribute="bottom" id="ftP-Y1-Hjq"/>
+                            <constraint firstItem="mPu-EI-dKp" firstAttribute="leading" secondItem="z87-nE-ViO" secondAttribute="leading" id="gmQ-0z-d7c"/>
+                            <constraint firstItem="O2e-zd-dLm" firstAttribute="leading" secondItem="z87-nE-ViO" secondAttribute="leading" id="sf5-CI-QRa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="O2e-zd-dLm" id="qtq-Wg-Wsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ob4-W3-5FW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="139"/>
+        </scene>
+        <!--People View Controller-->
+        <scene sceneID="Cd2-r2-zWz">
+            <objects>
+                <viewController id="8sf-ZY-GzO" customClass="PeopleViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zIQ-x5-qiC"/>
+                        <viewControllerLayoutGuide type="bottom" id="mnu-GB-Cs9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UZV-HT-SwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-AG-spI">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fZr-Kj-A8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="8sf-ZY-GzO" eventType="touchUpInside" id="HJ8-7z-qrD"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-O8-gdh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VHv-O8-gdh" firstAttribute="top" secondItem="zIQ-x5-qiC" secondAttribute="bottom" id="0HW-8A-t9z"/>
+                            <constraint firstItem="7Wf-AG-spI" firstAttribute="leading" secondItem="UZV-HT-SwJ" secondAttribute="leading" id="6vG-t3-J1h"/>
+                            <constraint firstItem="7Wf-AG-spI" firstAttribute="top" secondItem="VHv-O8-gdh" secondAttribute="bottom" id="FRo-tm-Hjd"/>
+                            <constraint firstItem="mnu-GB-Cs9" firstAttribute="top" secondItem="7Wf-AG-spI" secondAttribute="bottom" id="FxY-jX-g0K"/>
+                            <constraint firstAttribute="trailing" secondItem="VHv-O8-gdh" secondAttribute="trailing" id="IUq-xj-qCY"/>
+                            <constraint firstItem="VHv-O8-gdh" firstAttribute="leading" secondItem="UZV-HT-SwJ" secondAttribute="leading" id="XkA-0E-08T"/>
+                            <constraint firstAttribute="trailing" secondItem="7Wf-AG-spI" secondAttribute="trailing" id="y3a-zI-zAL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="VHv-O8-gdh" id="vrU-UM-djy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERz-bU-lLg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441" y="139"/>
+        </scene>
+        <!--Jersey City View Controller-->
+        <scene sceneID="qjc-P9-SM0">
+            <objects>
+                <viewController id="Sjr-dp-JHq" customClass="JerseyCityViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2MT-a9-GAE"/>
+                        <viewControllerLayoutGuide type="bottom" id="EqI-99-xlO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mB6-Y8-Sj3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aT-Fk-H3O">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kdn-cK-bjG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="Sjr-dp-JHq" eventType="touchUpInside" id="HeD-cp-OkJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-Ih-YKT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7aT-Fk-H3O" secondAttribute="trailing" id="6Mr-F8-fUr"/>
+                            <constraint firstItem="EqI-99-xlO" firstAttribute="top" secondItem="7aT-Fk-H3O" secondAttribute="bottom" id="PAx-G3-dW0"/>
+                            <constraint firstItem="dmK-Ih-YKT" firstAttribute="leading" secondItem="mB6-Y8-Sj3" secondAttribute="leading" id="aub-1O-wjf"/>
+                            <constraint firstItem="dmK-Ih-YKT" firstAttribute="top" secondItem="2MT-a9-GAE" secondAttribute="bottom" id="bBA-oD-ANF"/>
+                            <constraint firstAttribute="trailing" secondItem="dmK-Ih-YKT" secondAttribute="trailing" id="jm5-4w-y3m"/>
+                            <constraint firstItem="7aT-Fk-H3O" firstAttribute="leading" secondItem="mB6-Y8-Sj3" secondAttribute="leading" id="vIo-Ex-zIG"/>
+                            <constraint firstItem="7aT-Fk-H3O" firstAttribute="top" secondItem="dmK-Ih-YKT" secondAttribute="bottom" id="yFD-SX-vzI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="dmK-Ih-YKT" id="BxT-P6-Guz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcx-eB-spt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="786"/>
+        </scene>
+        <!--Top Picks View Controller-->
+        <scene sceneID="1dl-Br-zhc">
+            <objects>
+                <viewController id="R8n-x0-mcf" customClass="TopPicksViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WhH-Hd-FTZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hr6-qo-pWo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XDq-L9-Uey">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXm-u4-ogp">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jVu-Bq-tSC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="R8n-x0-mcf" eventType="touchUpInside" id="Ifa-lk-FLR"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtv-Ga-UK3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HXm-u4-ogp" firstAttribute="top" secondItem="gtv-Ga-UK3" secondAttribute="bottom" id="2HT-9r-B4O"/>
+                            <constraint firstItem="gtv-Ga-UK3" firstAttribute="leading" secondItem="XDq-L9-Uey" secondAttribute="leading" id="7G1-80-w3u"/>
+                            <constraint firstItem="HXm-u4-ogp" firstAttribute="leading" secondItem="XDq-L9-Uey" secondAttribute="leading" id="9Eu-Y1-nA7"/>
+                            <constraint firstItem="gtv-Ga-UK3" firstAttribute="top" secondItem="WhH-Hd-FTZ" secondAttribute="bottom" id="OWR-d5-Ds0"/>
+                            <constraint firstAttribute="trailing" secondItem="gtv-Ga-UK3" secondAttribute="trailing" id="WWz-qI-psI"/>
+                            <constraint firstAttribute="trailing" secondItem="HXm-u4-ogp" secondAttribute="trailing" id="dHa-RW-MJY"/>
+                            <constraint firstItem="Hr6-qo-pWo" firstAttribute="top" secondItem="HXm-u4-ogp" secondAttribute="bottom" id="iCM-4Q-OEx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="gtv-Ga-UK3" id="3Fb-E1-r5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D2N-Fj-qQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="786"/>
+        </scene>
+        <!--Advertise View Controller-->
+        <scene sceneID="rlR-7l-Dzc">
+            <objects>
+                <viewController id="IJt-mu-ENO" customClass="AdvertiseViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uoy-q2-Z2L"/>
+                        <viewControllerLayoutGuide type="bottom" id="apl-NH-uZl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="naq-l2-Enb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFm-Le-UDu">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MdI-2Z-Rfw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="IJt-mu-ENO" eventType="touchUpInside" id="syF-G7-T9z"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4qX-hT-WfT">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bFm-Le-UDu" secondAttribute="trailing" id="2cL-FF-dKl"/>
+                            <constraint firstAttribute="trailing" secondItem="4qX-hT-WfT" secondAttribute="trailing" id="9s4-qq-yqL"/>
+                            <constraint firstItem="4qX-hT-WfT" firstAttribute="leading" secondItem="naq-l2-Enb" secondAttribute="leading" id="PHs-Dj-pOt"/>
+                            <constraint firstItem="bFm-Le-UDu" firstAttribute="top" secondItem="4qX-hT-WfT" secondAttribute="bottom" id="TDl-hS-66j"/>
+                            <constraint firstItem="bFm-Le-UDu" firstAttribute="leading" secondItem="naq-l2-Enb" secondAttribute="leading" id="VHn-SZ-NLc"/>
+                            <constraint firstItem="4qX-hT-WfT" firstAttribute="top" secondItem="uoy-q2-Z2L" secondAttribute="bottom" id="i2R-2D-S2f"/>
+                            <constraint firstItem="apl-NH-uZl" firstAttribute="top" secondItem="bFm-Le-UDu" secondAttribute="bottom" id="sx8-KQ-swm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="4qX-hT-WfT" id="QBJ-uh-dDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFU-Om-J21" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126" y="786"/>
+        </scene>
+        <!--Deals View Controller-->
+        <scene sceneID="VoR-65-LSq">
+            <objects>
+                <viewController id="cWQ-MC-qyE" customClass="DealsViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yOw-tQ-qEk"/>
+                        <viewControllerLayoutGuide type="bottom" id="8kR-aN-91Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iaW-Wa-JPP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aK2-Y2-9F9">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9QH-Uc-NFV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="cWQ-MC-qyE" eventType="touchUpInside" id="UvS-ev-qrV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDg-zZ-nN4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aK2-Y2-9F9" secondAttribute="trailing" id="0sv-HF-uGY"/>
+                            <constraint firstItem="8kR-aN-91Z" firstAttribute="top" secondItem="aK2-Y2-9F9" secondAttribute="bottom" id="5m4-2c-5zE"/>
+                            <constraint firstAttribute="trailing" secondItem="QDg-zZ-nN4" secondAttribute="trailing" id="L0K-57-HeO"/>
+                            <constraint firstItem="QDg-zZ-nN4" firstAttribute="leading" secondItem="iaW-Wa-JPP" secondAttribute="leading" id="Wy7-W6-hHm"/>
+                            <constraint firstItem="aK2-Y2-9F9" firstAttribute="top" secondItem="QDg-zZ-nN4" secondAttribute="bottom" id="YCo-hd-FhN"/>
+                            <constraint firstItem="QDg-zZ-nN4" firstAttribute="top" secondItem="yOw-tQ-qEk" secondAttribute="bottom" id="qI0-CX-DDT"/>
+                            <constraint firstItem="aK2-Y2-9F9" firstAttribute="leading" secondItem="iaW-Wa-JPP" secondAttribute="leading" id="uYk-5p-2bQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="QDg-zZ-nN4" id="WdO-T9-1Xp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xWn-YB-TGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2780" y="786"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="9cS-il-iNE">
+            <objects>
+                <viewController id="vnt-Ws-AkE" customClass="AboutViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bA-Vq-di8"/>
+                        <viewControllerLayoutGuide type="bottom" id="mN4-lF-FIa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lfm-rr-sEX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHM-vV-v6h">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zPg-aJ-NN2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="vnt-Ws-AkE" eventType="touchUpInside" id="hZX-VC-sy8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odx-Jm-3uO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="odx-Jm-3uO" secondAttribute="trailing" id="GJc-yb-too"/>
+                            <constraint firstItem="mN4-lF-FIa" firstAttribute="top" secondItem="UHM-vV-v6h" secondAttribute="bottom" id="ODy-MQ-23f"/>
+                            <constraint firstAttribute="trailing" secondItem="UHM-vV-v6h" secondAttribute="trailing" id="cVc-a4-Yis"/>
+                            <constraint firstItem="odx-Jm-3uO" firstAttribute="leading" secondItem="lfm-rr-sEX" secondAttribute="leading" id="fbM-7f-PXY"/>
+                            <constraint firstItem="odx-Jm-3uO" firstAttribute="top" secondItem="0bA-Vq-di8" secondAttribute="bottom" id="hLO-YH-h85"/>
+                            <constraint firstItem="UHM-vV-v6h" firstAttribute="leading" secondItem="lfm-rr-sEX" secondAttribute="leading" id="kLb-V9-fmQ"/>
+                            <constraint firstItem="UHM-vV-v6h" firstAttribute="top" secondItem="odx-Jm-3uO" secondAttribute="bottom" id="r1f-ld-iME"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="odx-Jm-3uO" id="0R0-aA-Dbp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJz-qL-oUu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3441" y="786"/>
+        </scene>
+        <!--Mail View Controller-->
+        <scene sceneID="Q83-io-Hgy">
+            <objects>
+                <viewController id="grN-cF-cJR" customClass="MailViewController" customModule="Hoboken_Girl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lUn-wF-Rup"/>
+                        <viewControllerLayoutGuide type="bottom" id="h3C-c2-Ywb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MK0-6X-2gm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haX-fo-k0d">
+                                <rect key="frame" x="0.0" y="637" width="375" height="30"/>
+                                <color key="backgroundColor" red="0.71979874369999997" green="0.83552426099999999" blue="0.4030279517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xHb-5f-4Wp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Home:" destination="grN-cF-cJR" eventType="touchUpInside" id="RY9-cm-425"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-hA-gct">
+                                <rect key="frame" x="0.0" y="20" width="375" height="617"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jvi-hA-gct" secondAttribute="trailing" id="D9J-r0-WCK"/>
+                            <constraint firstAttribute="trailing" secondItem="haX-fo-k0d" secondAttribute="trailing" id="EWG-dn-Ee4"/>
+                            <constraint firstItem="haX-fo-k0d" firstAttribute="leading" secondItem="MK0-6X-2gm" secondAttribute="leading" id="Ksi-K6-DHK"/>
+                            <constraint firstItem="haX-fo-k0d" firstAttribute="top" secondItem="Jvi-hA-gct" secondAttribute="bottom" id="eXz-Ha-dc8"/>
+                            <constraint firstItem="Jvi-hA-gct" firstAttribute="leading" secondItem="MK0-6X-2gm" secondAttribute="leading" id="etN-OH-XJA"/>
+                            <constraint firstItem="h3C-c2-Ywb" firstAttribute="top" secondItem="haX-fo-k0d" secondAttribute="bottom" id="nmR-Tf-lQG"/>
+                            <constraint firstItem="Jvi-hA-gct" firstAttribute="top" secondItem="lUn-wF-Rup" secondAttribute="bottom" id="weI-Zl-P8G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Container" destination="Jvi-hA-gct" id="VdW-0h-P3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fH5-qU-kQL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="-502"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FB-Btn" width="100" height="100"/>
+        <image name="Hoboken-Girl-Snapcode" width="625" height="625"/>
+        <image name="Insta-Btn" width="100" height="100"/>
+        <image name="Mail" width="100" height="100"/>
+        <image name="Pinterst" width="100" height="100"/>
+        <image name="Snapchat" width="100" height="100"/>
+        <image name="Twitter-Btn" width="100" height="100"/>
+        <image name="hoboken-girl-logo" width="404" height="316"/>
+    </resources>
+</document>
